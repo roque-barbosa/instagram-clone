@@ -9,10 +9,18 @@ import {
   MenuIcon
 } from '@heroicons/react/outline'
 import { HomeIcon } from '@heroicons/react/solid'
+import HeaderIcon from './HeaderIcon'
 
 const Header: React.FC = () => {
   return (
-    <div>
+    <div className='
+      shadow-sm
+      border-b
+      bg-white
+      sticky
+      top-0
+      z-50
+    '>
       <div className='
         flex
         justify-between
@@ -97,9 +105,21 @@ const Header: React.FC = () => {
           justify-end
           space-x-4
         '>
-          <HomeIcon className='nav-button'/>
+          <HeaderIcon Icon={HomeIcon} />
+          <HeaderIcon Icon={PaperAirplaneIcon} count={1} />
+          <HeaderIcon Icon={PlusCircleIcon} />
+          <HeaderIcon Icon={UserGroupIcon} />
+          <HeaderIcon Icon={HeartIcon} />
           <MenuIcon className='h-6 md:hidden cursor-pointer'/>
-          <PaperAirplaneIcon className='nav-button'/>
+          <img
+            src='https://leadsdeconsorcio.com.br/blog/wp-content/uploads/2019/11/25.jpg'
+            alt='profile pic'
+            className='
+              h-10
+              rounded-full
+              cursor-pointer
+            '
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Posts from './Posts/Posts';
+import Sidebar from './Sidebar/Sidebar';
 import Stories from './Stories/Stories';
 
 const Feed: React.FC = () => {
@@ -22,9 +23,13 @@ const Feed: React.FC = () => {
         <Posts />
       </section>
 
-      <section>
-        {/* MiniProfile */}
-        {/* Sugestions */}
+      <section className='
+        hidden
+        xl:inline-grid
+        md:col-span-1
+      '>
+        {/* Sidebar */}
+        <Sidebar />
       </section>
     </main>
   );

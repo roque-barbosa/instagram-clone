@@ -1,4 +1,5 @@
 import React from 'react';
+import Posts from './Posts/Posts';
 import Stories from './Stories/Stories';
 
 const Feed: React.FC = () => {
@@ -18,6 +19,7 @@ const Feed: React.FC = () => {
         {/* Stories */}
         <Stories />
         {/* Posts */}
+        <Posts />
       </section>
 
       <section>

@@ -37,7 +37,7 @@ const Posts: React.FC = () => {
     <div>
       {posts.map(post => (
         <Post
-        key={post.id}
+        key={Math.random()}
         id={post.id.toString()}
         username={post.username}
         userImg={post.userImg}
